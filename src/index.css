@@ -1,0 +1,13 @@
+/* Importa Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rbc-event {
+  @apply p-0 bg-transparent;
+}
+
+.rbc-event-content {
+  @apply h-full;
+}
+

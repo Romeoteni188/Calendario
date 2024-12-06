@@ -1,0 +1,139 @@
+.rbc-event {
+  background-color: rgba(227, 56, 201, 0); 
+  padding: 0px;
+  margin-bottom: 30px; 
+  border-radius: 8px;
+
+}
+
+*{
+  /* scrollbar-color: #45494c #232627; */
+  scrollbar-color: #066206 #191a1b;
+}
+/* para el color de fondo del calendario*/
+/* .rbc-day-bg{
+    background: rebeccapurple;
+ } */
+
+/* boton del + mas  */
+/* button.rbc-button-link.rbc-show-more{
+  color: rgb(235, 232, 232);
+   background: #a909a9; 
+  display: block;
+  cursor: pointer;
+} */
+
+/* .rbc-overlay{
+  background: #5c04ce;
+  width: auto;
+} */
+/* .rbc-row-segment{
+  background: #a909a9;
+} */
+
+
+/* tamaño de la selda de la parte de semana */
+
+.rbc-time-slot{
+  height: 100px;
+  width: 100px;
+  /* background: #910596; */
+}
+
+/* encabezado de las columnas del calendario */
+
+.span{
+  color: #000;
+  font:14.4"Times New Roman";
+}
+
+.span-rbc-toolbar-larbel{
+  color: #000;
+  font:16 "Times New Roman";
+  padding: 0px 10px;
+}
+
+.rbc-button-link.rbc-show-more{
+  color: #000;
+}
+
+/* el calendario general */
+.calendario{
+  padding:50px;
+  height: 100vh;
+  width: 70vw;
+}
+
+
+/* para los nombres e iconos */
+.event-content {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  border-radius: 8px;
+  color: white;
+  /* width: 120px;  */
+  max-width: 131.5px; 
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  overflow: hidden;
+  /* background:#910596; */
+}
+
+.event-text {
+  display: inline-block;
+  max-width: 120px; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+
+.event-red {
+  background-color: red;
+  color: white;
+  padding: 1px;
+  width: 131.5px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.event-green {
+  background-color: green;
+  color: white;
+  padding: 1px;
+  width: 131.5px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.event-cafe {
+  background-color: #6f4f1f; /* Café */
+  color: white;
+  padding: 1px;
+  width: 131.5px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.event-icon {
+  margin-right: 7px; /* Espacio entre el icono y el texto */
+  padding-left: 6px;
+  font-size: 16px;
+}
+.event-content {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* agenda quitar ora  */
+.rbc-agenda-time-cell {
+  display: none; /* Oculta la celda de tiempo */
+}
+
+
