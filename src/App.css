@@ -1,61 +1,3 @@
-.rbc-event {
-  background-color: rgba(227, 56, 201, 0); 
-  padding: 0px;
-  margin-bottom: 30px; 
-  border-radius: 8px;
-
-}
-
-*{
-  /* scrollbar-color: #45494c #232627; */
-  scrollbar-color: #066206 #191a1b;
-}
-/* para el color de fondo del calendario*/
-/* .rbc-day-bg{
-    background: rebeccapurple;
- } */
-
-/* boton del + mas  */
-/* button.rbc-button-link.rbc-show-more{
-  color: rgb(235, 232, 232);
-   background: #a909a9; 
-  display: block;
-  cursor: pointer;
-} */
-
-/* .rbc-overlay{
-  background: #5c04ce;
-  width: auto;
-} */
-/* .rbc-row-segment{
-  background: #a909a9;
-} */
-
-
-/* tamaño de la selda de la parte de semana */
-
-.rbc-time-slot{
-  height: 100px;
-  width: 100px;
-  /* background: #910596; */
-}
-
-/* encabezado de las columnas del calendario */
-
-.span{
-  color: #000;
-  font:14.4"Times New Roman";
-}
-
-.span-rbc-toolbar-larbel{
-  color: #000;
-  font:16 "Times New Roman";
-  padding: 0px 10px;
-}
-
-.rbc-button-link.rbc-show-more{
-  color: #000;
-}
 
 /* el calendario general */
 .calendario{
@@ -64,14 +6,15 @@
   width: 70vw;
 }
 
-
 /* para los nombres e iconos */
 .event-content {
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: center; 
   justify-content: center; 
   border-radius: 8px;
-  color: white;
+  /* color: white; */
   /* width: 120px;  */
   max-width: 131.5px; 
   text-overflow: ellipsis;
@@ -82,13 +25,12 @@
 
 .event-text {
   display: inline-block;
-  max-width: 120px; 
+  max-width: 131.5px; 
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   vertical-align: middle;
 }
-
 
 .event-red {
   background-color: red;
@@ -125,6 +67,11 @@
   padding-left: 6px;
   font-size: 16px;
 }
+
+.rbc-button-link.rbc-show-more{
+  color: #000;
+}
+
 .event-content {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -137,3 +84,119 @@
 }
 
 
+.rbc-event {
+  background-color: transparent; 
+  padding: 0px;
+  width: 131.5px;
+  margin-bottom: 30px; 
+  border-radius: 8px;
+  border: transparent !important;
+  background: transparent ;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+
+.rbc-event.rbc-selected{
+  background:transparent;
+  border-color: none;
+}
+
+*{
+  /* scrollbar-color: #45494c #232627; */
+   scrollbar-color: #066206 #191a1b00;  
+   
+}
+
+.rbc-events-container{
+  /* background-color: #20d6d6ee;   */
+                                
+}
+
+.rbc-day-slot.rbc-time-column{
+  /* background-color: #d3d620ee; */
+}
+
+/* Asegúrate de que los contenedores parent no afecten la disposición */
+.rbc-events-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo de cada contenedor de evento */
+.event-content {
+  margin: 0px 0; 
+  display: flex;
+  align-items: center; 
+}
+
+/* apartado de semana  */
+
+.rbc-day-slot .rbc-events {
+  display: flex;
+  flex-direction: column; /* Coloca los eventos en forma de lista */
+  gap: 8px; /* Agrega un espacio entre eventos */
+}
+
+.rbc-event-content{
+background: #00000000;
+border-color: none;
+border: 1px solid #00000000;
+width: auto;
+border-radius: 8px;
+padding: 0.5px; 
+display: flex;
+
+  align-items: center; 
+  justify-content: center; 
+  color: white;
+  max-width: 131.5px; 
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  overflow: hidden;
+
+}
+ .rbc-row-segment{
+  background:   #00000000;
+  color: #00000000;
+} 
+
+ 
+/* para quitar la fecha en las casillas de la semana */
+.rbc-event-label{
+  /* background: #a909a900;
+  color: #a909a9;
+  border-color: aqua; */
+  display: none
+}
+
+/* tamaño de la selda de la parte de semana */
+
+.rbc-time-slot{
+  /* background: #910596;   */
+  
+}
+
+ .rbc-timeslot-group{
+
+  /* background: #19d461; */
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos estén en una columna */
+  align-items: flex-start; /* Alinea los eventos al inicio horizontal */
+  padding: 10px; /* Espaciado interno */
+  gap: 8px; 
+}
+
+/* encabezado de las columnas del calendario */
+
+.span{
+  color: #000;
+  font:14.4"Times New Roman";
+}
+
+.span-rbc-toolbar-larbel{
+  color: #000;
+  font:16 "Times New Roman";
+  padding: 0px 10px;
+}
