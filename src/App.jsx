@@ -15,17 +15,8 @@ function App() {
 
   const events = [
     {
-      start: moment("2024-12-09T12:00:00").toDate(),
-      end: moment("2024-12-09T12:00:00").toDate(),
-      id: 1,
-      person: "alexa papa",
-      data: {
-        x: 5,
-      },
-    },
-    {
-      start: new Date("2024-12-10"),
-      end: new Date("2024-12-10"),
+      start: new Date("2025-04-10"),
+      end: new Date("2025-04-31"),
       id: 2,
       person: "Ana Pacay sagastume",
       data: {
@@ -33,8 +24,17 @@ function App() {
       },
     },
     {
-      start: new Date("2024-12-10"),
-      end: new Date("2024-12-10"),
+      start: moment("2025-04-09T12:00:00").toDate(),
+      end: moment("2025-12-09T12:00:00").toDate(),
+      id: 1,
+      person: "alexa papa",
+      data: {
+        x: 5,
+      },
+    },
+    {
+      start: new Date("2025-12-10"),
+      end: new Date("2025-12-10"),
       id: 2,
       person: "Carlos Cante Ruiz",
       data: {
@@ -42,8 +42,8 @@ function App() {
       },
     },
     {
-      start: new Date("2024-12-11"),
-      end: new Date("2024-12-11"),
+      start: new Date("2025-12-11"),
+      end: new Date("2025-12-11"),
       id: 2,
       person: "Pedro Picapiedra",
       data: {
@@ -51,8 +51,8 @@ function App() {
       },
     },
     {
-      start: new Date("2024-12-11"),
-      end: new Date("2024-12-11"),
+      start: new Date("2025-12-11"),
+      end: new Date("2025-12-11"),
       id: 2,
       person: "Jennifer Cacao Guevara",
       data: {
@@ -60,8 +60,8 @@ function App() {
       },
     },
     {
-      start: moment("2024-12-11T12:00:00").toDate(),
-      end: moment("2024-12-11T12:00:00").toDate(),
+      start: moment("2025-12-11T12:00:00").toDate(),
+      end: moment("2025-12-11T12:00:00").toDate(),
       id: 5,
       person: "alexa coc",
       data: {
@@ -69,8 +69,8 @@ function App() {
       },
     },
     {
-      start: moment("2024-12-11T12:00:00").toDate(),
-      end: moment("2024-12-11T12:00:00").toDate(),
+      start: moment("2025-12-11T12:00:00").toDate(),
+      end: moment("2025-12-11T12:00:00").toDate(),
       id: 2,
       person: "Juan Pérez",
       data: {
@@ -78,8 +78,8 @@ function App() {
       },
     },
     {
-      start: moment("2024-12-12T12:00:00").toDate(),
-      end: moment("2024-12-12T12:00:00").toDate(),
+      start: moment("2025-12-12T12:00:00").toDate(),
+      end: moment("2025-12-12T12:00:00").toDate(),
       id: 5,
       person: "alexa coc",
       data: {
@@ -87,8 +87,8 @@ function App() {
       },
     },
     {
-      start: moment("2024-12-12T12:00:00").toDate(),
-      end: moment("2024-12-12T12:00:00").toDate(),
+      start: moment("2025-12-12T12:00:00").toDate(),
+      end: moment("2025-12-12T12:00:00").toDate(),
       id: 6,
       person: "benedito chun caal cobra",
       data: {
@@ -96,17 +96,17 @@ function App() {
       },
     },
     {
-      start: moment("2024-12-12T12:00:00").toDate(),
-      end: moment("2024-12-12T12:00:00").toDate(),
+      start: moment("2025-12-12T12:00:00").toDate(),
+      end: moment("2025-12-12T12:00:00").toDate(),
       id: 3,
       person: "Carlos prado caal mazc",
       data: {
-        x: 10,
+        x: 8,
       },
     },
     {
-      start: moment("2024-12-12T12:00:00").toDate(),
-      end: moment("2024-12-12T12:00:00").toDate(),
+      start: moment("2025-12-12T12:00:00").toDate(),
+      end: moment("2025-12-12T12:00:00").toDate(),
       id: 4,
       person: "Juan Pérez",
       data: {
@@ -204,12 +204,12 @@ function App() {
         views={["month", "agenda"]} //para manejar las vistas de cual usar , quitar el dia dia que es day , week semana
         // defaultView={"month"} //para tener una vista por defecto
         //view={"month" } // es dinamico  lo podemos colocar un boton es como el value pero bloquea los botones
-        //date={moment("2024-12-05T12:00:00").toDate()}  //para controlar la fecha inicial del calendario
+        //date={moment("2025-12-05T12:00:00").toDate()}  //para controlar la fecha inicial del calendario
         selectable={true}
         toolbar={true} //controlar el encabezado del calendario
         //controlar las horas de los dias
-        min={moment("2024-12-04T08:00:00").toDate()}
-        max={moment("2024-12-04T18:00:00").toDate()}
+        min={moment("2025-12-04T08:00:00").toDate()}
+        max={moment("2025-12-04T18:00:00").toDate()}
         formats={{
           dayHeaderFormat: (date) => moment(date).format("DD/MM/YY"),
           monthHeaderFormat: (date) => moment(date).format("MMMM YYYY"),
